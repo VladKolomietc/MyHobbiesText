@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: black;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    top: 60%;
+    background:url(rock.jpg) no-repeat center/cover;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bold;
+    font-size: 7rem;
+}
+.block {
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+}
+.Photo {
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+.block_text{
+    color: white;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif; 
+}
+.block_text  a {
+    color: rgb(100, 174, 127);
+}
+.menu {   
+    display: flex;
+    justify-content: space-around; 
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgb(170, 170, 170);
+    height: 75px;
+    width: 60%;
+    background: rgb(135,135,139);
+    background: linear-gradient(90deg, rgba(135,135,139,1) 0%, rgba(228,228,255,1) 35%, rgba(84,139,122,1) 100%);
+    
+}
+.url {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(0, 0, 0);
+}
+.stay {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(98, 186, 157);
+}
+.url::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 30px;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+.url:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+a {
+    text-decoration: none;
+  }
+.Info_text {
+    font-size: 15px;
+    font-family: 'Kanit', cursive;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 120px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(50,50,50,1) 100%);
+    margin-top: 25vh;
+}
+.git {
+    width: 40px;
+    height: 40px;
+}
+.you{
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+}
+.Info_text:nth-of-type(2) {
+    margin-left: 10px;
+}
